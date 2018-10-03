@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbg"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="355dp"
+        android:layout_height="416dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/regbg">
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Full Name"
+            android:textColor="#8ed8ff"/>
+
+        <EditText
+            android:id="@+id/newemail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:ems="10"
+            android:text="Email"
+            android:textColor="#8ed8ff"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/newpassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:hint="Password"
+            android:textColorHint="#8ed8ff"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="129dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:textColorHint="#8ed8ff"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/uploadktp"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="83dp"
+            android:ems="10"
+            android:text="Upload KTP/Passport/SIM"
+            android:textColor="#8ed8ff"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/ktpbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/uploadktp"
+            android:layout_marginEnd="41dp"
+            android:background="@drawable/ktpbtn" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/backbtn" />
+
+    <ImageButton
+        android:id="@+id/registerbtn"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/registerbtn" />
+
+</RelativeLayout>
