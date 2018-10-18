@@ -20,7 +20,8 @@
         <activity android:name=".Register" />
         <activity android:name=".Home" />
         <activity android:name=".Search" />
-        <activity android:name=".SearchResult"></activity>
+        <activity android:name=".SearchResult" />
+        <activity android:name=".SetDeparture"></activity>
     </application>
 
 </manifest>

@@ -4,18 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/homebg"
+    android:background="@drawable/home"
     tools:context=".Home">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/jastip" />
 
     <Button
         android:id="@+id/searchbtn"
         android:layout_width="131dp"
-        android:layout_height="102dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="112dp"
         android:textSize="25sp"
         android:background="#5ba6ce"
         android:text="Search" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:textSize="12sp"
+        style="@style/Base.Theme.AppCompat.Light"
+        android:text="Terms &amp; Conditions" />
+
+    <Button
+        android:id="@+id/setdeparturebutton"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/searchbtn"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:layout_marginTop="-112dp"
+        android:text="Departure" />
 </RelativeLayout>

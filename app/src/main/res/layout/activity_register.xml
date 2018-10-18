@@ -4,102 +4,144 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/registerbg"
+    android:background="@drawable/signup"
     tools:context=".Register">
 
-    <RelativeLayout
-        android:layout_width="355dp"
-        android:layout_height="416dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="61dp"
-        android:background="@drawable/regbg">
-
-        <EditText
-            android:id="@+id/fullname"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="71dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Full Name"
-            android:textColor="#8ed8ff"/>
-
-        <EditText
-            android:id="@+id/newemail"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="130dp"
-            android:ems="10"
-            android:text="Email"
-            android:textColor="#8ed8ff"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/newpassword"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:ems="10"
-            android:hint="Password"
-            android:textColorHint="#8ed8ff"
-            android:inputType="textPassword" />
-
-        <EditText
-            android:id="@+id/confirmpassword"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="129dp"
-            android:ems="10"
-            android:hint="Confirm Password"
-            android:textColorHint="#8ed8ff"
-            android:inputType="textPassword" />
-
-        <TextView
-            android:id="@+id/uploadktp"
-            android:layout_width="292dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="83dp"
-            android:ems="10"
-            android:text="Upload KTP/Passport/SIM"
-            android:textColor="#8ed8ff"
-            android:textSize="18sp" />
-
-        <ImageButton
-            android:id="@+id/ktpbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/uploadktp"
-            android:layout_marginEnd="41dp"
-            android:background="@drawable/ktpbtn" />
-    </RelativeLayout>
 
     <ImageButton
         android:id="@+id/backbtn"
-        android:layout_width="25dp"
-        android:layout_height="wrap_content"
+        android:layout_width="16dp"
+        android:layout_height="12dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="31dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/backbtn" />
 
+    <RelativeLayout
+        android:id="@+id/whitebg"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginStart="-23dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/accountsignup">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="337dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="21dp"
+            android:gravity="center"
+            android:paddingLeft="75dp"
+            android:paddingRight="76dp"
+            android:text="By creating an account you agree to our Terms of servicce and privacy policy"
+            android:textColor="#39619E"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="176dp"
+            android:layout_height="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="89dp"
+            android:text="Create an Account"
+            android:textColor="#39619E"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="67dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Full Name"
+            android:textColor="#99CCEB" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="124dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Email"
+            android:textColor="#99CCEB" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="176dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#99CCEB" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="124dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColorHint="#99CCEB" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginBottom="69dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Upload KTP/Passport/SIM"
+            android:textColor="#99CCEB" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="78dp"
+            android:background="@drawable/addbtn" />
+
+    </RelativeLayout>
+
     <ImageButton
         android:id="@+id/registerbtn"
-        android:layout_width="320dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24.8dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/registerbtn" />
-
 </RelativeLayout>
