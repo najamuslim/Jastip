@@ -46,4 +46,14 @@
         android:textSize="12sp"
         android:layout_marginTop="-112dp"
         android:text="Departure" />
+
+    <Button
+        android:id="@+id/pbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="169dp"
+        android:text="Profile" />
 </RelativeLayout>
